@@ -195,7 +195,7 @@ $dbname = "studentdb";
  ```
 → Data inserted successfully 🎉
 
-<img src="https://github.com/user-attachments/assets/b69b4e20-353f-46d4-a68b-796b55ae7309" />
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/0fc158fa-ed94-4641-965a-9e91a04106e7" />
 
 
 # 🧱 8. FINAL ARCHITECTURE
