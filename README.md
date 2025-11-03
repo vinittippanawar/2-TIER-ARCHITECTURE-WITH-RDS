@@ -195,6 +195,8 @@ $dbname = "studentdb";
  ```
 → Data inserted successfully 🎉
 
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/cf4220d2-26d3-4f45-8b62-545e9a91bd83" />
+
 # 🧱 8. FINAL ARCHITECTURE
 - Public Subnet: Web Server (EC2 + Nginx + PHP)
 - Private Subnet: RDS (MariaDB)
