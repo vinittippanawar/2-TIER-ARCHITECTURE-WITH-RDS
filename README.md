@@ -97,4 +97,56 @@ scp -i "C:\Users\vinit\Downloads\webkey.pem" "C:\Users\vinit\Downloads\dbkey.pem
 ssh -i dbkey.pem ec2-user@<private-ip>
 
 ```
+# 🌐 3. CONFIGURED WEB SERVER
+- Installed and configured LEMP Stack (Linux, Nginx, MariaDB, PHP):
+  
+   ```bash
+  sudo dnf install nginx php mariadb105-server php-mysqlnd -y
+sudo systemctl start nginx
+sudo systemctl enable nginx
+sudo systemctl start php-fpm
+sudo systemctl enable php-fpm
+```
+- Then I went to /usr/share/nginx/html/ and created web files:
+``` bash
+sudo nano form.html
+sudo nano submit.php
+```
+# 💾 4. CONFIGURED DATABASE (RDS)
+🔹 Created a DB Subnet Group (important step)
+
+- While creating RDS, I created a DB Subnet Group named db-subnet-group.
+- It included both private subnets (for high availability across two AZs):
+
+- 10.0.2.0/24 → Availability Zone: us-east-1a
+
+- 10.0.3.0/24 → Availability Zone: us-east-1b
+
+✅ This was required because RDS needs minimum 2 subnets in different AZs to ensure redundancy.
+
+🔹 RDS Configuration:
+
+- Engine: MariaDB
+
+- Deployment type: Single DB instance
+
+- DB Name: studentdb
+
+- Username: admin
+
+- Password: Pass$123
+
+- VPC: vpc-2tier
+
+- Subnet group: db-subnet-group (created manually)
+
+- Security Group: launch-wizard-10 (private DB SG)
+
+- Availability Zones: 2 AZs (auto-selected from subnet group)
+
+- Public Access: No
+
+✅ After creation, I copied the RDS Endpoint:
+
+
 
