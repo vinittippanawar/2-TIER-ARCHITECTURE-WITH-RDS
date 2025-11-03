@@ -180,6 +180,9 @@ $dbname = "studentdb";
 ```
  ✅ Now form data from form.html directly goes into RDS. 
 
+<img src="https://github.com/user-attachments/assets/a954dced-d2b5-4be0-9a69-e397d2421481" alt="RDS Connection Proof" />
+
+
 # 🔍 7. TESTING
 - Accessed website at:
   ```bash
