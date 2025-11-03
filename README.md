@@ -46,7 +46,9 @@ The setup ensures secure communication, data persistence, and isolation of the d
 -public-subnet → 10.0.1.0/24 (for Web Server)
 
 -private-subnet → 10.0.2.0/24 (for Database/RDS)
- 
+
+- later i created another one subnet(in diff az) and added to private rt to create db subnet group in rds.
+  
 -Attached an Internet Gateway (IGW) and edited route table for public subnet with:
 
 -Destination: 0.0.0.0/0  
