@@ -91,4 +91,10 @@ Created a Route Table named my-rt and associated private subnet to it.
 scp -i "C:\Users\vinit\Downloads\webkey.pem" "C:\Users\vinit\Downloads\dbkey.pem" ec2-user@<web-public-ip>:/home/ec2-user/
 
 ```
+✅ Then, I SSH’d from web server → private DB server:
+
+```bash
+ssh -i dbkey.pem ec2-user@<private-ip>
+
+```
 
