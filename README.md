@@ -34,6 +34,8 @@ The setup ensures secure communication, data persistence, and isolation of the d
        │   SG: rds-sg         │
        └──────────────────────┘
 
+  <img width="1536" height="1024" alt="Image" src="https://github.com/user-attachments/assets/1465468a-6ce3-4b9e-a042-8cc640e43044" />
+
 # ⚙️ 1. VPC SETUP 
 
  - I created a manual VPC named vpc-2tier with CIDR 10.0.0.0/16.
