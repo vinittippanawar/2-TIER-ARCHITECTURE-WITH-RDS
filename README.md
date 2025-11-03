@@ -149,5 +149,9 @@ sudo nano submit.php
 
 ✅ After creation, I copied the RDS Endpoint:
 
+```bash
+student-db.cq7e242kcoe2.us-east-1.rds.amazonaws.com
+```
+
 
 
