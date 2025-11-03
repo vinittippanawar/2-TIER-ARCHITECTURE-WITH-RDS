@@ -56,3 +56,34 @@ For private subnet, no IGW route was added.
 Created a Route Table named my-rt and associated private subnet to it.
 
 ✅ Now my architecture had proper separation — web in public, DB in private.
+
+# 🖥️ 2. LAUNCH EC2 INSTANCES
+
+-🔹 Public EC2 – Web Server
+
+- OS: Amazon Linux 2023
+
+- Subnet: public-subnet
+
+- Security Group: launch-wizard-9
+
+- Inbound rules:
+
+- HTTP (80) → Anywhere
+
+- SSH (22) → My IP
+
+- Key Pair: webkey.pem
+
+-🔹 Private EC2 – Database Server (initially used before RDS)
+
+- Subnet: private-subnet
+
+- Security Group: launch-wizard-10
+
+- Inbound: My web server’s private IP
+
+- Key Pair: dbkey.pem
+
+✅ Uploaded dbkey.pem from local machine to web server using SCP:
+
