@@ -166,5 +166,18 @@ CREATE TABLE students (
   course VARCHAR(50)
 );
 ```
+# 🧩 6. UPDATED PHP TO USE RDS ENDPOINT
+- In submit.php, I replaced:
+```bash
+$servername = "localhost";
+```
+- with
+```bash
+$servername = "student-db.cq7e242kcoe2.us-east-1.rds.amazonaws.com";
+$username = "admin";
+$password = "Pass@123";
+$dbname = "studentdb";
+```
+
 
 
