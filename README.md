@@ -50,3 +50,9 @@ The setup ensures secure communication, data persistence, and isolation of the d
 -Destination: 0.0.0.0/0  
 
 -Target: igw-id
+
+For private subnet, no IGW route was added.
+
+Created a Route Table named my-rt and associated private subnet to it.
+
+✅ Now my architecture had proper separation — web in public, DB in private.
