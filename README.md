@@ -102,13 +102,13 @@ ssh -i dbkey.pem ec2-user@<private-ip>
   
    ```bash
   sudo dnf install nginx php mariadb105-server php-mysqlnd -y
-sudo systemctl start nginx
-sudo systemctl enable nginx
-sudo systemctl start php-fpm
-sudo systemctl enable php-fpm
-```
+  sudo systemctl start nginx
+  sudo systemctl enable nginx
+  sudo systemctl start php-fpm
+  sudo systemctl enable php-fpm
+  ```
 - Then I went to /usr/share/nginx/html/ and created web files:
-
+  
 ``` bash
 sudo nano form.html
 sudo nano submit.php
