@@ -178,6 +178,37 @@ $username = "admin";
 $password = "Pass@123";
 $dbname = "studentdb";
 ```
+ ✅ Now form data from form.html directly goes into RDS. 
+
+# 🔍 7. TESTING
+- Accessed website at:
+  ```bash
+  http://<public-ip>
+  ```
+- Filled form → submitted → got registration success message
+- Verified in RDS:
+ ```bash
+  SELECT * FROM students;
+ ```
+→ Data inserted successfully 🎉
+
+# 🧱 8. FINAL ARCHITECTURE
+- Public Subnet: Web Server (EC2 + Nginx + PHP)
+- Private Subnet: RDS (MariaDB)
+- Internet Gateway: For Web Tier only
+- No Direct Internet Access for DB
+- Secure Communication through Private IP within VPC
+
+# 🧩 KEY POINTS LEARNED
+- Created custom VPC with public & private subnet separation
+- Created DB Subnet Group with 2 private subnets (AZ coverage)
+- Setup RDS in private subnet (no public access)
+- Connected EC2 web server to RDS using endpoint
+- Implemented secure 2-Tier Architecture on AWS
+
+# 🧑‍💻 AUTHOR
+- Vinit Tippanawar 🤓
+- Cloud Computing Enthusiast | AWS Learner
 
 
 
