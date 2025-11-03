@@ -87,3 +87,8 @@ Created a Route Table named my-rt and associated private subnet to it.
 
 ✅ Uploaded dbkey.pem from local machine to web server using SCP:
 
+```bash
+scp -i "C:\Users\vinit\Downloads\webkey.pem" "C:\Users\vinit\Downloads\dbkey.pem" ec2-user@<web-public-ip>:/home/ec2-user/
+
+```
+
