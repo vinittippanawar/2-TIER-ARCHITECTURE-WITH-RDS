@@ -55,7 +55,7 @@ The setup ensures secure communication, data persistence, and isolation of the d
 
 -Target: igw-id
 
-For private subnet, no IGW route was added.
+For private subnet, no IGW route was added. Created nat gateway and added entery of public subnet and attachted to private subnet.
 
 Created a Route Table named my-rt and associated private subnet to it.
 
