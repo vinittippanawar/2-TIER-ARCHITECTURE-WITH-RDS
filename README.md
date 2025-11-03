@@ -195,7 +195,8 @@ $dbname = "studentdb";
  ```
 → Data inserted successfully 🎉
 
-<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/ba2ca593-7974-4fb0-8646-7be71c273181" />
+<img src="https://github.com/user-attachments/assets/b69b4e20-353f-46d4-a68b-796b55ae7309" />
+
 
 # 🧱 8. FINAL ARCHITECTURE
 - Public Subnet: Web Server (EC2 + Nginx + PHP)
