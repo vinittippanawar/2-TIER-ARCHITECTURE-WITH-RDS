@@ -46,5 +46,7 @@ The setup ensures secure communication, data persistence, and isolation of the d
 -private-subnet → 10.0.2.0/24 (for Database/RDS)
  
 -Attached an Internet Gateway (IGW) and edited route table for public subnet with:
+
 -Destination: 0.0.0.0/0  
+
 -Target: igw-id
