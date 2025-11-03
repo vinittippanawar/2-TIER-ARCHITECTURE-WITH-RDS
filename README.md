@@ -108,6 +108,7 @@ sudo systemctl start php-fpm
 sudo systemctl enable php-fpm
 ```
 - Then I went to /usr/share/nginx/html/ and created web files:
+
 ``` bash
 sudo nano form.html
 sudo nano submit.php
