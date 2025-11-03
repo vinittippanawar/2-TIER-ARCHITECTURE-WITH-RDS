@@ -197,6 +197,7 @@ $dbname = "studentdb";
 
 <img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/0fc158fa-ed94-4641-965a-9e91a04106e7" />
 
+<img width="1224" height="678" alt="Image" src="https://github.com/user-attachments/assets/18a03900-fce2-4f60-8ebc-c9f059d9b977" />
 
 # 🧱 8. FINAL ARCHITECTURE
 - Public Subnet: Web Server (EC2 + Nginx + PHP)
