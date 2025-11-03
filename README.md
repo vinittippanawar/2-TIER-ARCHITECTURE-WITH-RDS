@@ -152,6 +152,19 @@ sudo nano submit.php
 ```bash
 student-db.cq7e242kcoe2.us-east-1.rds.amazonaws.com
 ```
+- then excuted-
+  
+```bash
+CREATE DATABASE studentdb;
+USE studentdb;
 
+CREATE TABLE students (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  fullname VARCHAR(100),
+  email VARCHAR(100),
+  phone BIGINT,
+  course VARCHAR(50)
+);
+```
 
 
