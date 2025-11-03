@@ -39,12 +39,12 @@ The setup ensures secure communication, data persistence, and isolation of the d
  - I created a manual VPC named vpc-2tier with CIDR 10.0.0.0/16.
  - 🔹 Steps I performed:
 
- -Created 2 Subnets:
+-Created 2 Subnets:
 
- -public-subnet → 10.0.1.0/24 (for Web Server)
+-public-subnet → 10.0.1.0/24 (for Web Server)
 
- -private-subnet → 10.0.2.0/24 (for Database/RDS)
+-private-subnet → 10.0.2.0/24 (for Database/RDS)
  
 -Attached an Internet Gateway (IGW) and edited route table for public subnet with:
- -Destination: 0.0.0.0/0  
- -Target: igw-id
+-Destination: 0.0.0.0/0  
+-Target: igw-id
